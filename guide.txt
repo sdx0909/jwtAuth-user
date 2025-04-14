@@ -31,3 +31,7 @@ NOTE : to executing the project we only fire following cmd :
 backend> npm run dev
 
 
+7 : adding the 'app.js' and 'index.js' file
+
+
+
