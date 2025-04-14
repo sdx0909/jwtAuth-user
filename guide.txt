@@ -1,0 +1,33 @@
+1 : creating the project directory.
+-----------------------------------
+> mkdir backend
+
+2 : move to newly created directory.
+----------------------------------
+> cd backend
+
+3 : checking the node is available or not.
+-----------------------------------
+backend> node -v
+----------------------------------
+v22.14.0
+
+4 : initializing the npm in project directory
+-------------------------------------------
+backend> npm init -y
+
+5 : installing the dependencise in project.
+-------------------------------------------
+backend> npm i express cookie-parser bcrypt mongoose jsonwebtoken cors email-validator dotenv nodemon --save
+
+6 : adding the configuration in 'packege.json' file
+-------------------------------------------
+"scripts": {
+    "dev": "nodemon server.js"
+}
+-------------------------------------------
+NOTE : to executing the project we only fire following cmd :
+-------------------------------------------
+backend> npm run dev
+
+
