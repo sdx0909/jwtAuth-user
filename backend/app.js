@@ -1,5 +1,6 @@
 // 1: requiring the actual express server
 const express = require("express");
+const authRouter = require("./routes/authRoute");
 
 // configuring for '.env' file-access in index.js
 const { config } = require("dotenv");
@@ -11,6 +12,9 @@ const app = express();
 
 // 3 : Requests will reach this route after
 //     passing through the middleware
+app.use("/api/auth", authRouter);
+
+// for simple-creating the server like (ping -- pong)
 app.use("/", (req, res) => {
   res.status(200).json({
     data: "jwt Authentication server",

@@ -32,6 +32,31 @@ backend> npm run dev
 
 
 7 : adding the 'app.js' and 'index.js' file
+----------------------------------------------
+----------------------------------------------
 
 
+STEPS FOR ADDING THE ROUTES WITH THEIR CONTROLLERS
+==================================================
+1 : creating the new folder for 'routes'.
+-------------------------------------------
+2 : creating the new folder for 'controllers'.
+-------------------------------------------
+
+3 : creating the "authRouter" in  routes > 'authRoute.js' file.
+-------------------------------------------
+    3.1 : adding the sub-routes for /signin 
+    3.2 : adding the sub-routes for /signup
+    3.3 : adding the sub-routes for /logout
+    3.4 : adding the sub-routes for /getUser
+
+4 : in 'app.js' file adding the main path for above sub-route.
+-------------------------------------------
+
+
+
+
+
+
+3 : creating the new folder for 'models'.
 
