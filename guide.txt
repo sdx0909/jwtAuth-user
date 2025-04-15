@@ -52,11 +52,26 @@ STEPS FOR ADDING THE ROUTES WITH THEIR CONTROLLERS
 
 4 : in 'app.js' file adding the main path for above sub-route.
 -------------------------------------------
+app.use("/api/auth", authRouter);
 
 
+5 : creating the new folder for 'models'.
+-------------------------------------------
+    5.1 : defining the 'userSchema' for 'user'.
+    5.2 : creating the 'userModel' from 'userSchema'.
+    5.3 : exporting the 'userModel' from 'userSchema.js'
 
+6 : configuring the database-connection with mongodb :
+------------------------------------------------------
+    6.1 : creating the folder called "config"
+    6.2 : in that folder create the "databaseConfig.js" file.
+    6.3 : logic for db connection.
+    6.4 : in 'app.js' executing the db connection controller.
 
+7 : defining the controllers 
+    7.1 'signup' --> with email-validator and saving the data into db.
+    7.2 'signin' --> finding the record in db and checking the password (encrypted) and setting JWTtoken in cookie.
+    7.3 'logout' --> disabling the cookie.
+    7.4 'getUser' --> getting the (logged-in) user data from db and sending it to client.
 
-
-3 : creating the new folder for 'models'.
 
