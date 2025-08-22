@@ -74,4 +74,5 @@ app.use("/api/auth", authRouter);
     7.3 'logout' --> disabling the cookie.
     7.4 'getUser' --> getting the (logged-in) user data from db and sending it to client.
 
-
+8 : for safety of password we add following methods;
+    8.1 : 
